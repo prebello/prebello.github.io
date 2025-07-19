@@ -1,72 +1,243 @@
-
+/* ===== CSS RESET (lightweight) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f8f8;
-    color: #333;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #ffffff;
 }
 
-header {
-    background: #1c1c3c;
-    color: white;
-    padding: 20px;
-<!-- text-align: center; -->
+/* ===== ACCESSIBILITY ===== */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
 }
 
-.header-content {
-    display: flex;
-    align-items: left;
-    gap: 30px;
-    flex-wrap: wrap;
+/* ===== HEADER / NAV ===== */
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+.site-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  min-height: 4.5rem;
+  gap: 1rem;
 }
 
-.logo {
-    height: auto;
-    width: auto;
+/* Logo */
+.site-logo {
+  display: inline-block;
+  height: 64px;
+  width: auto;
+  max-width: 100%;
 }
 
-.title-block h1 {
-    margin: 0;
-    font-size: 1.2em;
+.site-title-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.site-title-block h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.site-title-block h1.project-name {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #444;
 }
 
-header img {
+/* Responsive Nav Toggle */
+#nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  margin-left: auto;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: none; /* shown on small screens */
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Nav list */
+.site-nav {
+  margin-left: auto;
+}
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+.site-nav a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 500;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration: underline;
+}
+
+/* Mobile nav behavior */
+@media (max-width: 640px) {
+  .nav-toggle-label {
     display: block;
-    margin: 0 auto;
-    max-height: 30px;
+  }
+  .site-nav {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  #nav-toggle:checked + .nav-toggle-label + .site-nav {
+    max-height: 300px;
+  }
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .site-nav li {
+    border-top: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+  }
+  .site-header-inner {
+    justify-content: flex-start;
+  }
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+/* ===== HERO (optional if you later add a big banner) ===== */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f6f6f6;
+  border-bottom: 1px solid #e0e0e0;
+}
+.hero h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+/* ===== MAIN CONTENT WRAPPER ===== */
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Section spacing */
+.wrapper section {
+  margin-bottom: 4rem;
+}
+.wrapper section:last-child {
+  margin-bottom: 0;
 }
 
-main {
-    padding: 40px 20px;
+/* Headings */
+.wrapper h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-section {
-    margin-bottom: 40px;
+/* Long-form text */
+.wrapper p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
+/* Details / Summary block for long description */
+.project-long details {
+  margin-top: 1rem;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 4px;
+  background: #fcfcfc;
 }
+.project-long summary {
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.project-long summary::-webkit-details-marker {
+  display: none;
+}
+.project-long summary::after {
+  content: \" +\"; /* toggled in JS if you later add it; CSS-only fallback */
+  margin-left: 0.25rem;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  border-top: 1px solid #e0e0e0;
+  background: #fafafa;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+.site-footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Utility alignment tweaks for images in text */
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Increase line height & font size slightly on large screens */
+@media (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}\n```\n\n---
+
+### Notes on Your Content
+
+**Grant Acknowledgment:** I preserved the FAPERJ line in the short project paragraph (update values if the grant numbering needs formal formatting).
+
+**Huge Intro Paragraph:** Rather than dumping the full grant narrative, I wrapped the long text in a `<details>` element so visitors can expand it if interested. This improves first impression and readability.
+
+**About Section:** I normalized academic degree abbreviations and fixed mixed casing in links. You can further expand with bullet points, current roles at CERN/CMS, publications, and conference presentations.
+
+**Contact Section:** Still has the placeholder `heavyionsproject@gmail.com`. Update if you prefer an institutional email (CBPF, CERN, etc.).
+
