@@ -229,15 +229,4 @@ img.responsive {
   body {
     font-size: 18px;
   }
-}\n```\n\n---
-
-### Notes on Your Content
-
-**Grant Acknowledgment:** I preserved the FAPERJ line in the short project paragraph (update values if the grant numbering needs formal formatting).
-
-**Huge Intro Paragraph:** Rather than dumping the full grant narrative, I wrapped the long text in a `<details>` element so visitors can expand it if interested. This improves first impression and readability.
-
-**About Section:** I normalized academic degree abbreviations and fixed mixed casing in links. You can further expand with bullet points, current roles at CERN/CMS, publications, and conference presentations.
-
-**Contact Section:** Still has the placeholder `heavyionsproject@gmail.com`. Update if you prefer an institutional email (CBPF, CERN, etc.).
-
+}
