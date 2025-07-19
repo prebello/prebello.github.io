@@ -1,53 +1,91 @@
-
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patricia Rebello Teles Homepage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patricia Rebello Teles – Heavy Ions Physics & CMS ECAL Operations</title>
+  <meta name="description" content="Heavy Ions Physics & Electromagnetic Calorimeter (ECAL) Operations in CMS – Project at CBPF supported by FAPERJ." />
+  <!-- Open Graph for richer sharing -->
+  <meta property="og:title" content="Heavy Ions Physics & CMS ECAL Operations" />
+  <meta property="og:description" content="Project at CBPF supported by FAPERJ: Heavy Ion Physics, Photon-Induced Processes, and CMS ECAL Operations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo_ions_flash_eng.jpg" />
+  <meta property="og:url" content="https://heavyions.tec.br" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Preload the logo for faster first paint -->
+  <link rel="preload" href="images/logo_ions_flash_eng.jpg" as="image" />
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/logo_ions_flash_eng.jpg" class="logo">
-            <div class="title-block">
-                <h1>Project:</h1>
-                <h1>Heavy Ions Physics & Electromagnetic Calorimeter Operations in CMS</h1>
-             </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Introduction</a></li>
-                <li><a href="#sobre">About the coordinator</a></li>
-                <li><a href="#contato">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <h2>Welcome to the Heavy Ions Physics and Electromagnetic Calorimeter Operations in CMS</h2>
-            <p>This is a project hosted by the Brazilian Center for Physics Research (CBPF) and supported by FAPERJ E-26/2021JPS-E_40/2021.</p>
-            <p align="justify">In this proposal we present the plans for the nucleation of a new line of research and work to be developed at the Brazilian Center for Physical Research - CBPF in Rio de Janeiro. This new nucleus will work in heavy ion physics and in the electromagnetic calorimeter (ECAL) of the Compact Muon Solenoid (CMS), one of the LHC experiments at CERN. In Heavy Ion Physics, with a very broad approach, we propose two experimental analyses not yet studied in the group of heavy ions of the CMS, and two phenomenology analyses related to new physics in photon-induced processes from heavy ion beam, as well as human resources formation contributing to the future of science in Brazil. In addition, in another innovative proposal aimed at the operation of the CMS detector, we present the possibility of work in the ECAL with developments in its trigger system as well as verifying the performance of the detector through its monitoring and calibration, during the new period of data taking of the LHC (RunIII) that starts in 2022. This project encompasses cutting-edge themes, fully covered in contemporary physics with the advent of more powerful accelerators, scientifically relevant within the community of High Energy Physics (HEP), of excellent quality, with innovative methodologies, and do not have groups of action in ICTs in Rio de Janeiro. We aim to open new and important research fronts in the institution, with multidisciplinary and interdisciplinary characteristics in research, teaching and extension. Many advances in the frontier of knowledge in ultrarelativistic heavy ion collisions will be achieved in the next periods of data taking from the LHC, in addition to the prospects of operation of future accelerators, which corroborates our thesis that this is an outstanding and very internationally competitive project. We emphasize the importance of support to the project by FAPERJ, raising the CBPF as one of excellence centers in Heavy Ion Physics and operation of the CMS ECAL in Rio de Janeiro. </p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Heavy Ions Project home">
+        <img src="images/logo_ions_flash_eng.jpg" alt="Heavy Ions Project logo" class="logo" />
+      </a>
+      <div class="title-block">
+        <h1 class="site-kicker">Project:</h1>
+        <h1 class="site-title">Heavy Ions Physics &amp; Electromagnetic Calorimeter Operations in CMS</h1>
+      </div>
+      <!-- Mobile nav toggle (optional; add JS if you want collapsible nav) -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+    <nav id="site-nav" class="site-nav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#coordinator">About the Coordinator</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </section>
-        <section id="sobre">
-            <h2>About the coordinator</h2>
-            <p align="justify"> 
-<br>                
-BSc in Mathematics from Universidade Federal do Rio de Janeiro (1991) and MSc in Physics from Physics Institut of São Paulo University (2006) researching Nuclear Physics applied to Medicine on the subject Proton
-Radiation Therapy supervised by Prof. Dr. Mahir Saleh Hussein. After that I continued in Mathematical Physics Department advisored by <A
-HREF="http://fma.if.usp.br/~eboli">Prof. Dr. Oscar Pinto Éboli</a> and on February 2008 I moved to <A
-HREF="http://www.ufabc.edu.br/">Universidade Federal do ABC</A> to finish my PhD on Particle Physics Phenomenology in LHC supervised by Dr. José Kenichi Mozukoshi. 
-<br>        
-        </p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>e-mail: heavyionsproject@gmail.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Patricia Rebello Teles </p>
-    </footer>
+  <main id="main" class="site-main" tabindex="-1">
+    <!-- Hero / lead section -->
+    <section id="intro" class="hero">
+      <h2>Welcome to the Heavy Ions Physics &amp; Electromagnetic Calorimeter Operations in CMS</h2>
+      <p class="lead">A project hosted by the <abbr title="Centro Brasileiro de Pesquisas Físicas">CBPF</abbr> and supported by <abbr title="Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro">FAPERJ</abbr> E-26/2021JPS-E_40/2021.</p>
+      <p class="justify">In this proposal we present plans to nucleate a new research line at CBPF in Rio de Janeiro, working in Heavy Ion Physics and in the Electromagnetic Calorimeter (ECAL) of the Compact Muon Solenoid (CMS) experiment at CERN. We pursue experimental analyses not yet explored within the CMS heavy-ion group, plus phenomenology studies of new physics in photon-induced processes with heavy-ion beams, while building human capacity that contributes to the future of science in Brazil.</p>
+      <details class="longform">
+        <summary>Read the full project description…</summary>
+        <div class="longform-body">
+          <p class="justify">In addition, we propose innovative work aimed at CMS detector operations: developments in the ECAL trigger system and performance verification through monitoring and calibration during the new LHC Run&nbsp;3 data-taking period (started in 2022). This project encompasses cutting-edge topics at the frontier of contemporary physics enabled by ever more powerful accelerators. It is scientifically relevant within the High Energy Physics (HEP) community, of excellent quality, and employs innovative methodologies—areas not yet developed within ICTs in Rio de Janeiro.</p>
+          <p class="justify">We aim to open new, important research fronts at CBPF with multidisciplinary and interdisciplinary characteristics across research, teaching, and outreach. Major advances in our understanding of ultrarelativistic heavy-ion collisions are expected from upcoming LHC data, along with prospects at future accelerators—reinforcing our view that this is an outstanding, internationally competitive project. Support from FAPERJ is essential to elevate CBPF as a center of excellence in Heavy Ion Physics and CMS ECAL operations in Rio de Janeiro.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- About the Coordinator -->
+    <section id="coordinator" class="about">
+      <h2>About the Coordinator</h2>
+      <p class="justify">Patricia Rebello Teles holds a BSc in Mathematics from Universidade Federal do Rio de Janeiro (1991) and an MSc in Physics from the Instituto de Física da Universidade de São Paulo (2006), where she researched Nuclear Physics applied to Medicine (Proton Radiation Therapy) under Prof.&nbsp;Dr.&nbsp;Mahir Saleh Hussein.</p>
+      <p class="justify">She continued in the Mathematical Physics Department advised by <a href="http://fma.if.usp.br/~eboli">Prof.&nbsp;Dr.&nbsp;Oscar Pinto Éboli</a>. In February 2008 she moved to the <a href="http://www.ufabc.edu.br/">Universidade Federal do ABC</a> to complete her PhD in Particle Physics Phenomenology at the LHC under Dr.&nbsp;José Kenichi Mozukoshi.</p>
+      <!-- Add more career / publication highlights here if desired -->
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:heavyionsproject@gmail.com">heavyionsproject@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; 2025 Patricia Rebello Teles. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional small script to handle mobile nav toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    if (navToggle && siteNav) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        siteNav.classList.toggle('is-open');
+      });
+    }
+  </script>
 </body>
 </html>
