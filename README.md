@@ -34,7 +34,7 @@ This site is built with plain HTML/CSS and can be deployed using:
 
 ## 👩‍🔬 Project Lead
 
-**[Your Full Name Here]**  
+**[Dr. Patricia Rebello Teles]**  
 Senior Researcher – CBPF / CMS Collaboration  
 Email: [patricia.rebello.telesATcern.ch]  
 ORCID: [0000-0001-9029-8506](https://orcid.org/0000-0001-9029-8506)
